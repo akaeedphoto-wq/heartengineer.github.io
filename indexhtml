@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আকাইদ ইসলাম | Heart Engineer</title>
+    <style>
+        /* মূল থিম ও ফন্ট */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        /* হেডার ও নেভিগেশন বার */
+        header {
+            background-color: #0f172a;
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1050px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ef4444;
+        }
+
+        /* প্রোফাইল ব্যানার (Hero Section) */
+        .hero {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid #ef4444;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .hero h1 {
+            margin: 10px 0;
+            font-size: 36px;
+            letter-spacing: 1px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #94a3b8;
+            margin-bottom: 0;
+        }
+
+        /* কন্টেন্ট কন্টেইনার */
+        .main-content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* কার্ড ডিজাইন */
+        .card {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid #ef4444;
+        }
+
+        .card h2 {
+            color: #0f172a;
+            margin-top: 0;
+            font-size: 22px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 10px;
+        }
+
+        /* ফটো গ্যালারি গ্রিড */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            background: #f1f5f9;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* স্কিল ও ইনফো লিস্ট */
+        .info-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-list li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .info-list li::before {
+            content: "❤️";
+            margin-right: 10px;
+            font-size: 14px;
+        }
+
+        .btn-contact {
+            display: inline-block;
+            background-color: #ef4444;
+            color: white;
+            text-decoration: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn-contact:hover {
+            background-color: #dc2626;
+        }
+
+        /* ফুটার */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0f172a;
+            color: #94a3b8;
+            font-size: 14px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- হেডার বার -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">HeartEngineer.com</div>
+        </div>
+    </header>
+
+    <!-- প্রোফাইল সেকশন -->
+    <div class="hero">
+        <img src="36151.png" alt="আকাইদ ইসলাম">
+        <h1>আকাইদ ইসলাম</h1>
+        <p>Official Portfolio & Photo Gallery</p>
+    </div>
+
+    <!-- মূল কন্টেন্ট -->
+    <div class="main-content">
+        
+        <!-- আমার সম্পর্কে -->
+        <div class="card">
+            <h2>আমার সম্পর্কে (About Me)</h2>
+            <p>হ্যালো! আমি আকাইদ ইসলাম। heartengineer.com ওয়েবসাইটে আপনাকে স্বাগতম। এই প্ল্যাটফর্মের মাধ্যমে আমি আমার জীবনের বিভিন্ন মুহূর্ত, চিন্তাভাবনা এবং কাজগুলোকে ফ্রেমবন্দি করে সবার সাথে শেয়ার করি।</p>
+        </div>
+
+        <!-- ফটো গ্যালারি সেকশন -->
+        <div class="card">
+            <h2>আমার গ্যালারি (My Photos)</h2>
+            <p>আমার কিছু প্রিয় মুহূর্ত ও ছবি নিচে দেওয়া হলো:</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="34447.jpg" alt="Photo 1"></div>
+                <div class="gallery-item"><img src="34446.jpg" alt="Photo 2"></div>
+                <div class="gallery-item"><img src="34450.jpg" alt="Photo 3"></div>
+                <div class="gallery-item"><img src="34449.jpg" alt="Photo 4"></div>
+                <div class="gallery-item"><img src="34448.jpg" alt="Photo 5"></div>
+                <div class="gallery-item"><img src="34445.jpg" alt="Photo 6"></div>
+                <div class="gallery-item"><img src="34455.jpg" alt="Photo 7"></div>
+            </div>
+        </div>
+
+        <!-- দক্ষতা সমূহ -->
+        <div class="card">
+            <h2>দক্ষতা ও পারদর্শিতা (Skills)</h2>
+            <ul class="info-list">
+                <li>স্মার্টফোন ও টেকনোলজি এক্সপার্ট</li>
+                <li>মোবাইল ফটোগ্রাফি ও ইমেজ এডিটিং</li>
+                <li>ডিজিটাল কনটেন্ট ক্রিয়েশন</li>
+            </ul>
+        </div>
+
+        <!-- ঠিকানা ও যোগাযোগ -->
+        <div class="card">
+            <h2>যোগাযোগ ও ঠিকানা (Contact & Address)</h2>
+            <p>যেকোনো প্রয়োজনে বা বিস্তারিত জানতে নিচের মাধ্যমে যোগাযোগ করতে পারেন:</p>
+            <p>
+                <strong>📍 ঠিকানা:</strong> সরদারহাট,ডিমলা, রংপুর, বাংলাদেশ <br><br>
+                <strong>📧 ইমেইল:</strong> contact@graphic399@gmail.com
+            </p>
+            <a href="mailto:contact@graphic399@gmail.com" class="btn-contact">আমাকে ইমেইল করুন</a>
+        </div>
+
+    </div>
+
+    <!-- ফুটার -->
+    <footer>
+        <p>&copy; 2026 | www.graphic399@gmail.com | সর্বস্বত্ব সংরক্ষিত</p>
+    </footer>
+
+</body>
+</html>
